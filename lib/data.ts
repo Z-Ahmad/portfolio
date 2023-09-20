@@ -2,9 +2,9 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import yelpcampImg from "@/public/yelpcampImg.png";
+import ppbImg from "@/public/ppbImg.png";
+import quantumquillImg from "@/public/quantumQuill.png";
 
 export const links = [
   {
@@ -60,22 +60,28 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
-    description: "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl:  "/" /*corpcommentImg*/
+    title: "YelpCamp",
+    description:
+      "I created a full stack web application to provide a comprehensive list of campgrounds. It has features like authentication, authorization, CRUD operations, comments, ratings and more.",
+    tags: ["Node.js", "ExpressJS", "Bootstrap", "MongoDB", "MapBox API"],
+    imageUrl: yelpcampImg,
+    projectUrl: "https://github.com/Z-Ahmad/YelpCamp"
   },
   {
-    title: "rmtDev",
-    description: "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: "/" /*rmtdevImg*/
+    title: "Predicting Police Brutality",
+    description:
+      "A data science project that aimed to predict the number of Black Americans that would die at the hands of police in 2020 and beyond. Created during the Black Lives Matter protests of 2020.",
+    tags: ["R", "R Studio", "HTML", "CSS", "Jupyter Notebook"],
+    imageUrl: ppbImg,
+    projectUrl: "https://github.com/Z-Ahmad/Predicting-Police-Brutality/blob/main/TermProject.pdf"
   },
   {
-    title: "Word Analytics",
-    description: "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl:  "/" /*wordanalyticsImg*/
+    title: "Quantum Quill",
+    description:
+      "Currently working on a full stack web application that will allow users to create haikus with the help of an AI. Syllable and rhyme schemes will be automatically generated.",
+    tags: ["Python", "GPT4.5 API", "SvelteKit", "Tailwind"],
+    imageUrl: quantumquillImg,
+    projectUrl: "https://github.com/Z-Ahmad"
   }
 ] as const;
 
