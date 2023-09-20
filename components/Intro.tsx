@@ -36,12 +36,12 @@ export default function Intro() {
         </div>
       </div>
 
-      <motion.p className="mb-10 mt-4 px-4 text-2xl font-medium leading-[1.5]" initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }}>
+      <motion.h1 className="mb-10 mt-4 px-4 text-2xl font-medium leading-[1.5]" initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }}>
         <span className="font-bold">Hello, I'm Zaki.</span> I'm a <span className="font-bold">computer science graduate</span> from the{" "}
         <span className="font-bold">University at Buffalo</span>. My expertise lies in <span className="italic"> full-stack </span>web development, primarily
         using <span className="underline">React (Next.js)</span>. I'm on a <span className="font-bold">mission</span> to explore diverse tech fields and find my
         niche.
-      </motion.p>
+      </motion.h1>
 
       <motion.div
         className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
