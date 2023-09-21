@@ -13,10 +13,7 @@ export default function Projects() {
 
   return (
     <section ref={ref} id="projects" className="scroll-mt-28 mb-28">
-      <div className="text-center">
-      <SectionHeading>My projects</SectionHeading>
-      </div>
-      
+    <SectionHeading>My projects</SectionHeading>
       <div>
         {projectsData.map((project, index) => (
           <React.Fragment key={index}>
