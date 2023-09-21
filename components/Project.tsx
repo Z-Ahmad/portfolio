@@ -62,7 +62,7 @@ export default function Project({ title, description, tags, imageUrl, projectUrl
           target="_blank"
           className="absolute top-0 right-0 bg-white p-2 text-gray-700
           flex items-center gap-2 text-[1.35rem] rounded-full outline-none 
-          focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition border border-black/10"
+          focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition borderBlack"
         >
           <FaGithubSquare />
         </a>
