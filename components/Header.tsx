@@ -1,6 +1,6 @@
 'use client' //needs to use client for framer motion (useEffect)
 
-import React, { useContext, useState } from 'react'
+import React from 'react'
 import {motion} from 'framer-motion'
 import {links} from '@/lib/data'
 import Link from 'next/link'
@@ -9,7 +9,7 @@ import { useActiveSectionContext } from '@/context/active-section-context'
 
 export default function Header() {
 
-  const {activeSection, setActiveSection} = useActiveSectionContext();
+  const {activeSection, setActiveSection, setTimeOfLastClick} = useActiveSectionContext();
 
   return (
     <header className="z-[999] relative">
@@ -42,7 +42,11 @@ export default function Header() {
                 className={clsx("flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition", {
                   "text-gray-950": activeSection === link.name //if activeSection is equal to link.name, then text-gray-950
                 })}
-                onClick={() => setActiveSection(link.name)} //when clicked, set activeSection to link.name
+                onClick={() => {
+                  setActiveSection(link.name)
+                  setTimeOfLastClick(Date.now())
+                }
+              } 
               >
                 {link.name}
                 {link.name === activeSection && 
