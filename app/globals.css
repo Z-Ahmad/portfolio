@@ -13,3 +13,7 @@ html.dark{
 .borderBlack{
   @apply border border-black/10
 }
+
+body * {
+    @apply transition-colors duration-150;
+}
