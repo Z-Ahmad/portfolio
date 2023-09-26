@@ -69,9 +69,9 @@ export const projectsData = [
     projectUrl: "https://github.com/Z-Ahmad/YelpCamp"
   },
   {
-    title: "Predicting Police Brutality",
+    title: "Predicting Racial Disparities in Law Enforcement Interactions",
     description:
-      "A data science project that aimed to predict the number of Black Americans that would die at the hands of police in 2020 and beyond. Created during the Black Lives Matter protests of 2020.",
+      "A comprehensive study that utilizes data science techniques to analyze and predict law enforcement incidents, particularly those involving racial disparities.",
     tags: ["R", "R Studio", "HTML", "CSS", "Jupyter Notebook"],
     imageUrl: ppbImg,
     projectUrl: "https://github.com/Z-Ahmad/Predicting-Police-Brutality/blob/main/TermProject.pdf"
