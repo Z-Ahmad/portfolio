@@ -61,6 +61,14 @@ export const experiencesData = [
 
 export const projectsData = [
   {
+    title: "Quantum Quill",
+    description:
+      "Quantum Quill seamlessly combines the power of a syllable-checking API with AI-generated suggestions. It assists users in crafting haikus, ensuring proper syllable counts while offering creative prompts for the first line.",
+    tags: ["React", "Next.js", "GPT4.5 API", "Flask", "Tailwind"],
+    imageUrl: quantumquillImg,
+    projectUrl: "https://github.com/Z-Ahmad/quantum-quill"
+  },
+  {
     title: "YelpCamp",
     description:
       "I created a full stack web application to provide a comprehensive list of campgrounds. It has features like authentication, authorization, CRUD operations, comments, ratings and more.",
@@ -75,14 +83,6 @@ export const projectsData = [
     tags: ["R", "R Studio", "HTML", "CSS", "Jupyter Notebook"],
     imageUrl: ppbImg,
     projectUrl: "https://github.com/Z-Ahmad/Predicting-Police-Brutality/blob/main/TermProject.pdf"
-  },
-  {
-    title: "Quantum Quill",
-    description:
-      "Currently working on a full stack web application that will allow users to create haikus with the help of an AI. Syllable and rhyme schemes will be automatically generated.",
-    tags: ["Python", "GPT4.5 API", "SvelteKit", "Tailwind"],
-    imageUrl: quantumquillImg,
-    projectUrl: "https://github.com/Z-Ahmad"
   }
 ] as const;
 
