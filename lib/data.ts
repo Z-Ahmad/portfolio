@@ -63,8 +63,8 @@ export const projectsData = [
   {
     title: "Quantum Quill",
     description:
-      "Quantum Quill seamlessly combines the power of a syllable-checking API with AI-generated suggestions. It assists users in crafting haikus, ensuring proper syllable counts while offering creative prompts for the first line.",
-    tags: ["React", "Next.js", "GPT4.5 API", "Flask", "Tailwind"],
+      "Quantum Quill seamlessly combines your creativity with AI assistance, providing real-time suggestions to craft beautiful haikus while maintaining the haiku structure. Precision is insured through a custom syllable-counting API.",
+    tags: ["React", "Next.js", "OPENAI GPT", "Flask", "Tailwind"],
     imageUrl: quantumquillImg,
     projectUrl: "https://github.com/Z-Ahmad/quantum-quill"
   },
