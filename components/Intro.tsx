@@ -67,7 +67,7 @@ export default function Intro() {
         </Link>
 
         <a
-          href="/Resume.pdf"
+          href="/Zaki_Ahmad_Resume.pdf"
           target="_blank"
           className=" group bg-white px-7 py-3 
           flex items-center gap-2 rounded-full outline-none 
