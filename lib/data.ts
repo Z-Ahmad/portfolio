@@ -54,7 +54,7 @@ export const experiencesData = [
     location: "Latham, NY",
     description:
       "Working as an IT Specialist Programmer for the NYS Office of the Attorney General. Playing a pivotal role in the migration of a legacy Enterprise Content Management system, adeptly managing content, applications, and APIs for a seamless transition. Developing and maintaining dynamic E-Payment web applications in Java and Javascript. Ensuring flawless integration with a sophisticated hosted payment platform to enhance user experience and streamline transactions. ",
-    icon: React.createElement(FaReact),
+    icon: React.createElement(CgWorkAlt),
     date: "Nov 2023 - present"
   }
 ] as const;
