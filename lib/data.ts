@@ -50,12 +50,12 @@ export const experiencesData = [
     date: "Aug 2019 - May 2023"
   },
   {
-    title: "Full-Stack Developer",
-    location: "Albany, NY",
+    title: "IT Specialist 2 Programming",
+    location: "Latham, NY",
     description:
-      "I'm now a full-stack developer actively searching for full-time employment opportunities.",
+      "Working as an IT Specialist Programmer for the NYS Office of the Attorney General. Playing a pivotal role in the migration of a legacy Enterprise Content Management system, adeptly managing content, applications, and APIs for a seamless transition. Developing and maintaining dynamic E-Payment web applications in Java and Javascript. Ensuring flawless integration with a sophisticated hosted payment platform to enhance user experience and streamline transactions. ",
     icon: React.createElement(FaReact),
-    date: "May 2023 - present"
+    date: "Nov 2023 - present"
   }
 ] as const;
 
