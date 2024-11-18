@@ -4,7 +4,7 @@ import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import yelpcampImg from "@/public/yelpcampImg.png";
 import ppbImg from "@/public/ppbImg.png";
-import quantumquillImg from "@/public/quantumQuill.png";
+import zenithImg from "@/public/zenith-card-image.png";
 
 export const links = [
   {
@@ -59,14 +59,26 @@ export const experiencesData = [
   }
 ] as const;
 
-export const projectsData = [
+type Project = {
+  title: string;
+  description: string;
+  tags: readonly string[];
+  imageUrl: any;
+  gitUrl: string;
+  projectUrl?: string;
+  blogUrl?: string;
+};
+
+export const projectsData: Project[] = [
   {
-    title: "Quantum Quill",
+    title: "Zenith",
     description:
-      "Quantum Quill seamlessly combines your creativity with AI assistance, providing real-time suggestions to craft beautiful haikus while maintaining the haiku structure. Precision is insured through a custom syllable-counting API.",
-    tags: ["React", "Next.js", "OPENAI GPT", "Flask", "Tailwind"],
-    imageUrl: quantumquillImg,
-    projectUrl: "https://github.com/Z-Ahmad/quantum-quill"
+      "A Notion-inspired document management platform built with Next.js, featuring real-time collaboration and a sleek dark-mode interface. Users can create nested documents with rich text editing, add cover images and emojis, and share their work publicly through unique URLs.",
+    tags: ["React", "Next.js", "TypeScript", "Tailwind", "Convex", "EdgeStore", "BlockNote", "Clerk"],
+    imageUrl: zenithImg,
+    gitUrl: "https://github.com/Z-Ahmad/zenith",
+    projectUrl: "https://zenith-pi.vercel.app/",
+    blogUrl: "https://zenith-pi.vercel.app/preview/j57ddfc9khbnev9ftqswy8z8fx74v7ek"
   },
   {
     title: "YelpCamp",
@@ -74,7 +86,7 @@ export const projectsData = [
       "I created a full stack web application to provide a comprehensive list of campgrounds. It has features like authentication, authorization, CRUD operations, comments, ratings and more.",
     tags: ["Node.js", "ExpressJS", "Bootstrap", "MongoDB", "MapBox API"],
     imageUrl: yelpcampImg,
-    projectUrl: "https://github.com/Z-Ahmad/YelpCamp"
+    gitUrl: "https://github.com/Z-Ahmad/YelpCamp"
   },
   {
     title: "Predicting Racial Disparities in Law Enforcement Interactions",
@@ -82,7 +94,7 @@ export const projectsData = [
       "A comprehensive study that utilizes data science techniques to analyze and predict law enforcement incidents, particularly those involving racial disparities.",
     tags: ["R", "R Studio", "HTML", "CSS", "Jupyter Notebook"],
     imageUrl: ppbImg,
-    projectUrl: "https://github.com/Z-Ahmad/Predicting-Police-Brutality/blob/main/TermProject.pdf"
+    gitUrl: "https://github.com/Z-Ahmad/Predicting-Police-Brutality/blob/main/TermProject.pdf"
   }
 ] as const;
 
@@ -110,3 +122,5 @@ export const skillsData = [
   "Docker",
   "Linux",
 ] as const;
+
+export type ProjectType = (typeof projectsData)[number];

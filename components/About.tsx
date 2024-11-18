@@ -29,8 +29,8 @@ export default function About() {
         <span className="font-medium">cyber security</span>, and <span className="font-medium">data structures & algorithms</span>. I dabbled in{" "}
         <span className="font-medium">data science</span> and <span className="font-medium">human computer interaction</span> as well. My core stack is{" "}
         <span className="font-medium">React, Next.js, Node.js, and MongoDB</span>. I am proficient in <span className="font-medium">Python</span> as well. I am
-        always looking to learn new technologies. I am currently working for the <span className="underline">NYS Office of the Attorney General</span> as an{" "}
-        <span className="font-medium">IT Specialist Programmer</span>.
+        always looking to learn new technologies. I am currently working for the <span className="underline">NYS Office of the Attorney General</span> as a{" "}
+        <span className="font-medium">Full Stack Software Engineer</span>.
       </p>
 
       <p>
