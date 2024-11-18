@@ -8,9 +8,9 @@ import { FaArrowRight, FaExternalLinkAlt, FaGithubSquare, FaLink } from "react-i
 import Link from 'next/link';
 import { BsArrowRight } from 'react-icons/bs';
 
-type ProjectProps = (typeof projectsData)[number];
+import type { Project } from "@/lib/data";
 
-export default function Project({ title, description, tags, imageUrl, gitUrl, projectUrl, blogUrl }: ProjectProps) {
+export default function Project({ title, description, tags, imageUrl, gitUrl, projectUrl, blogUrl }: Project) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,

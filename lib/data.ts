@@ -59,7 +59,7 @@ export const experiencesData = [
   }
 ] as const;
 
-type Project = {
+export type Project = {
   title: string;
   description: string;
   tags: readonly string[];
@@ -96,7 +96,7 @@ export const projectsData: Project[] = [
     imageUrl: ppbImg,
     gitUrl: "https://github.com/Z-Ahmad/Predicting-Police-Brutality/blob/main/TermProject.pdf"
   }
-] as const;
+];
 
 export const skillsData = [
   "HTML",
@@ -122,5 +122,3 @@ export const skillsData = [
   "Docker",
   "Linux",
 ] as const;
-
-export type ProjectType = (typeof projectsData)[number];
