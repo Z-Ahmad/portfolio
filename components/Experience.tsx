@@ -35,6 +35,7 @@ export default function Experience() {
                 background: theme === "light" ? "white" : "#111827",
                 fontSize: "1.5rem"
               }}
+              // visible={true} uncomment for local testing
             >
               <h3 className="font-semibold capitalize">{item.title}</h3>
               <p className="font-normal !mt-0">{item.location}</p>
