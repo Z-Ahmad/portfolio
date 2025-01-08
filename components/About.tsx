@@ -23,7 +23,7 @@ export default function About() {
       <p className="mb-3">
         {" "}
         I have always been fascinated by <span className="font-medium">technology</span>, building my first computer at 14 years old. Pursuing a{" "}
-        <span className="italic">Bachelor's</span> in <span className="font-medium">Computer Science</span> at <span className="font-medium">UB</span> was a
+        <span className="italic">Bachelor's</span> in <span className="font-medium">Computer Science</span> at <span className="font-medium">The University at Buffalo</span> was a
         natural choice. During my studies, I explored the <span className="font-medium">numerous</span> fields of computer science, such as{" "}
         <span className="font-medium">software development</span>, <span className="font-medium">computer architecture</span>,{" "}
         <span className="font-medium">cyber security</span>, and <span className="font-medium">data structures & algorithms</span>. I dabbled in{" "}
