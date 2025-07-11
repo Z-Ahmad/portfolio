@@ -2,7 +2,7 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import yelpcampImg from "@/public/yelpcampImg.png";
+import globeplotImg from "@/public/globeplot.png";
 import ppbImg from "@/public/ppbImg.png";
 import zenithImg from "@/public/zenith-card-image.png";
 
@@ -50,7 +50,7 @@ export const experiencesData = [
     date: "Aug 2019 - May 2023"
   },
   {
-    title: "IT Specialist 2 (Full Stack Developer)",
+    title: "Full Stack Developer",
     location: "Latham, NY",
     description:
       "Working as a Full Stack Developer for the Office of the New York State Attorney General. Playing a pivotal role in the development and management of web applications using C#, ASP.NET, React, TailwindCSS, and SQL. ",
@@ -64,12 +64,20 @@ export type Project = {
   description: string;
   tags: readonly string[];
   imageUrl: any;
-  gitUrl: string;
+  gitUrl?: string;
   projectUrl?: string;
   blogUrl?: string;
 };
 
 export const projectsData: Project[] = [
+  {
+    title: "Globeplot",
+    description:
+      "A web app for organizing multi-stop travel itineraries with AI-powered document processing. Users upload travel confirmations (PDFs, emails) and Globeplot extracts events to create clean, editable trip plans grouped by location and date. Features interactive maps, timeline views, and secure trip sharing.",
+    tags: ["React", "TypeScript", "Tailwind", "Firebase", "Express.js", "Mapbox", "Mistral AI", "Zustand"],
+    imageUrl: globeplotImg,
+    projectUrl: "https://www.globeplot.com/",
+  },
   {
     title: "Zenith",
     description:
@@ -79,14 +87,6 @@ export const projectsData: Project[] = [
     gitUrl: "https://github.com/Z-Ahmad/zenith",
     projectUrl: "https://zenith-pi.vercel.app/",
     blogUrl: "https://zenith-pi.vercel.app/preview/j57ddfc9khbnev9ftqswy8z8fx74v7ek"
-  },
-  {
-    title: "YelpCamp",
-    description:
-      "I created a full stack web application to provide a comprehensive list of campgrounds. It has features like authentication, authorization, CRUD operations, comments, ratings and more.",
-    tags: ["Node.js", "ExpressJS", "Bootstrap", "MongoDB", "MapBox API"],
-    imageUrl: yelpcampImg,
-    gitUrl: "https://github.com/Z-Ahmad/YelpCamp"
   },
   {
     title: "Predicting Racial Disparities in Law Enforcement Interactions",
