@@ -75,6 +75,7 @@ export default function Project({ title, description, tags, imageUrl, gitUrl, pr
         />
 
         <div className="absolute z-10 top-[.25rem] right-[.25rem] flex gap-2">
+          {gitUrl && (
           <a
             href={gitUrl}
             target="_blank"
@@ -85,7 +86,7 @@ export default function Project({ title, description, tags, imageUrl, gitUrl, pr
           >
             <FaGithubSquare />
           </a>
-
+          )}
           {projectUrl && (
             <a 
               href={projectUrl} 
