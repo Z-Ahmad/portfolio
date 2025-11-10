@@ -20,7 +20,7 @@ export default function Intro() {
         <div className="relative">
           <motion.div initial={{ opacity: 0, scale: 0 }} animate={{ opacity: 1, scale: 1 }} transition={{ type: "tween", duration: 0.2 }}>
             <Image
-              src="/notion-face-transparent.png"
+              src="/zaki.png"
               alt="zaki portrait"
               width={500}
               height={500}

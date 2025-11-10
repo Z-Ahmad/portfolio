@@ -76,7 +76,8 @@ export const projectsData: Project[] = [
       "A web app for organizing multi-stop travel itineraries with AI-powered document processing. Users upload travel confirmations (PDFs, emails) and Globeplot extracts events to create clean, editable trip plans grouped by location and date. Features interactive maps, timeline views, and secure trip sharing.",
     tags: ["React", "TypeScript", "Tailwind", "Firebase", "Express.js", "Mapbox", "Mistral AI", "Zustand"],
     imageUrl: globeplotImg,
-    projectUrl: "https://www.globeplot.com/",
+    gitUrl: "https://github.com/Z-Ahmad/globe-plot",
+    projectUrl: "https://www.globeplot.com/"
   },
   {
     title: "Zenith",
@@ -109,6 +110,7 @@ export const skillsData = [
   "Express",
   "C/C++",
   "C#",
+  "ASP.NET",
   "Java",
   "Git",
   "Tailwind",
@@ -122,4 +124,7 @@ export const skillsData = [
   "Docker",
   "Linux",
   "Azure",
+  "Power Automate",
+  "Power Apps",
+  "SharePoint",
 ] as const;
