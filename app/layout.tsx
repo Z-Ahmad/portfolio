@@ -1,52 +1,50 @@
-import './globals.css'
-import { Inter } from 'next/font/google'
-import Header from '@/components/Header'
-import ActiveSectionContextProvider from '@/context/active-section-context'
-import { Toaster } from 'react-hot-toast'
-import Footer from '@/components/Footer'
-import ThemeSwitch from '@/components/ThemeSwitch'
-import ThemeContextProvider from '@/context/theme-context'
+import type { Metadata, Viewport } from "next";
+import { Geist, Geist_Mono, Playfair_Display } from "next/font/google";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import MotionRoot from "@/components/MotionRoot";
+import { site } from "@/lib/site";
+import { themeScript } from "@/lib/theme";
+import "./globals.css";
 
-const inter = Inter({ subsets: ['latin'] })
+const geist = Geist({ subsets: ["latin"], variable: "--font-geist" });
+const geistMono = Geist_Mono({ subsets: ["latin"], variable: "--font-geist-mono" });
+const playfair = Playfair_Display({ subsets: ["latin"], style: ["normal", "italic"], variable: "--font-playfair" });
 
-export const metadata = {
-  title: 'Zaki Ahmad | Portfolio',
-  description: 'Zaki Ahmad is a full-stack developer',
-}
+export const metadata: Metadata = {
+  metadataBase: new URL(site.url),
+  title: { default: `${site.name} · ${site.role}`, template: `%s · ${site.name}` },
+  description: site.description,
+  openGraph: { type: "website", siteName: site.name, title: site.name, description: site.description },
+  twitter: { card: "summary_large_image" },
+};
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export const viewport: Viewport = {
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#f5f2ec" },
+    { media: "(prefers-color-scheme: dark)", color: "#0d0f12" },
+  ],
+};
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className='!scroll-smooth'>
-      <body className={`${inter.className} bg-gray-50 text-gray-950 relative pt-28 sm:pt-36
-      dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90`}>
-        {/* Background circle red */}
-        <div className='bg-[#fbe2e3] -z-10 absolute top-[-6rem] right-[11rem] 
-        h-[31.24rem] w-[31.24rem] rounded-full blur-[10rem] sm:w-[68.75rem]
-        dark:bg-[#946263]'></div>
-
-        {/* Background circle blue */}
-        <div className='bg-[#dbd7fb] -z-10 absolute top-[-1rem] left-[-35rem] 
-        h-[31.24rem] w-[50rem] rounded-full blur-[10rem]
-        sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem]
-        dark:bg-[#676394]'>
-        </div>
-
-        <ThemeContextProvider>
-          <ActiveSectionContextProvider>
-            <Header/>
-            {children}
-            <Footer/>
-          <ThemeSwitch/>
-          </ActiveSectionContextProvider> 
-        </ThemeContextProvider>
-
-
-        <Toaster position='bottom-right'/>
+    <html lang="en" suppressHydrationWarning className={`${geist.variable} ${geistMono.variable} ${playfair.variable}`}>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: themeScript }} />
+      </head>
+      <body className="min-h-dvh font-sans">
+        <a
+          href="#main"
+          className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-xl focus:bg-ink focus:px-4 focus:py-2 focus:text-bg"
+        >
+          Skip to content
+        </a>
+        <MotionRoot>
+          <Header />
+          <main id="main">{children}</main>
+          <Footer />
+        </MotionRoot>
       </body>
     </html>
-  )
+  );
 }
